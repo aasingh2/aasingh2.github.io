@@ -1,0 +1,73 @@
+---
+title: "Highlighting_markers_of_cells_in_dge_plots"
+author: "Aakanksha Singh"
+date: "2023-07-31"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(patchwork)
+library(ggrepel)
+library(cowplot)
+library(scran)
+```
+
+## Getting the dge data
+```{r}
+load("../intermediate_data/bulk_count_matrix_filtered.RData")
+```
+
+
+```{r}
+load("../intermediate_data/bulk_dgea_res_TLS_all.RData")
+res_df_tls <- left_join(as.data.frame(res_TLS_all) %>%
+    arrange(padj) %>%
+    rownames_to_column("biomaRt") %>%
+    dplyr::filter(baseMean > 50),
+    as.data.frame(rowData(count_matrix_with_unique_gene_id)), by = "biomaRt")
+```
+
+# Getting the top 5 markers from single cell data
+```{r}
+# load("../../Single_cell_reference_from_brain/updated_glioma_sce")
+# marker_genes= scran::findMarkers(x=updated_glioma_sce,groups=colData(updated_glioma_sce)$cell_type, direction="up",assay.type="logcounts")
+# save(marker_genes, file = "../intermediate_data/marker_genes_from_sce.RData")
+load("../intermediate_data/marker_genes_from_sce.RData")
+```
+
+```{r}
+
+plot_volcano <- function(res_df, gene_list, upper) {
+  res_df %>%
+    dplyr::mutate(label = ifelse(biomaRt %in% gene_list, biomaRt, NA)) %>%
+    dplyr::mutate(col = is.na(label)) %>%
+    arrange(desc(col)) %>%
+    ggplot(aes(x = log2FoldChange, y = -log10(padj), color = col))+
+    geom_point() + geom_hline(yintercept = -log10(0.05)) + 
+    geom_text_repel(aes(label = label), ylim = c(-log10(0.05), upper), size = 1)+ theme_bw() +
+    scale_color_manual(values = c("red", "grey")) + theme(legend.position = "none") + geom_hline(yintercept = -log10(0.05))
+}
+
+
+for (i in 1:length(marker_genes))
+{
+  highlight_gene= as.data.frame(marker_genes[[i]]) %>% 
+                  filter(Top<=5) %>% rownames_to_column(var="Gene_symbol") %>% 
+                  pull(Gene_symbol)
+  cell_name= names(marker_genes[i])
+  file_name= paste0("../figures/cell_markers_in_dge_plots/",gsub(" ","_",cell_name),".pdf")
+  res_plot= plot_volcano(res_df_tls,highlight_gene,50) + ggtitle(paste(cell_name,"markers")) +xlim(-7,11)
+  save_plot(file_name,res_plot, base_width = 3.5, base_height = 3.5)
+  
+}
+
+
+
+```
+
