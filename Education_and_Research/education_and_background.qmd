@@ -1,0 +1,6 @@
+---
+layout: page
+---
+
+<img src="Education_and_research.png" style="height: 100%; width: 100%; object-fit: contain" />
+

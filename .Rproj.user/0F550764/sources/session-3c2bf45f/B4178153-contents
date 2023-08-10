@@ -1,0 +1,19 @@
+---
+title: "about this website"
+author: "Aakanksha Singh"
+date: "2023-06-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+More about this website.
+
+```{r, child="_session-info.Rmd"}
+
+```
+

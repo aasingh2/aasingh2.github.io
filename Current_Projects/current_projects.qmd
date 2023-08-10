@@ -1,0 +1,9 @@
+---
+title: Current Projects
+format: html
+editor: visual
+---
+
+-   My project is about *exploring transcriptional data from different technologies and their impact on cell-type deconvolution* . The goal is to come up with a comprehensive deconvolution methods that consistently infers the proportions of cell types in transcriptional data from different origins.
+
+-   I also work with the in-house generated omic data, specifically Bulk and Spatial transcriptomic and genomic data from human glioma samples to *study the cellular composition and cellular interactions within the Tertiary Lymphoid Structures (TLS)*. 

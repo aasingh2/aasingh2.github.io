@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Hi! Welcome to my personal website.\nI am a PhD stutent in the Group of Computational Immunology at Goethe-Universität Frankfurt. As a computational biologist, I am deeply passionate about analysing multi-omic data, with a special interest in Transcriptomics. I find great satisfaction in utilizing graphs to visually communicate complex data. My personal objective is to create open-source, user-friendly packages for comprehensive multi-omic data analyses. Moreover, I strongly believe in the value of interdisciplinary research that promotes openness, reproducibility, and collaboration."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "CV/link_to_CV.html",
+    "href": "CV/link_to_CV.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Download current CV"
+  },
+  {
+    "objectID": "Education_and_Research/education_and_background.html",
+    "href": "Education_and_Research/education_and_background.html",
+    "title": "Education and Research",
+    "section": "",
+    "text": "<img src=“Education_and_Research/Education_and_research.png” style=“height: 100%; width: 100%; object-fit: contain” ;“/>"
+  },
+  {
+    "objectID": "Current_Projects/current_projects.html",
+    "href": "Current_Projects/current_projects.html",
+    "title": "Current Projects",
+    "section": "",
+    "text": "My project is about exploring transcriptional data from different technologies and their impact on cell-type deconvolution . The goal is to come up with a comprehensive deconvolution methods that consistently infers the proportions of cell types in transcriptional data from different origins.\nI also work with the in-house generated omic data, specifically Bulk and Spatial transcriptomic and genomic data from human glioma samples to study the cellular composition and cellular interactions within the Tertiary Lymphoid Structures (TLS)."
+  },
+  {
+    "objectID": "CV/index.html",
+    "href": "CV/index.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Download current CV"
+  }
+]

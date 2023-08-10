@@ -1,0 +1,9 @@
+---
+title: "404: Page not found"
+format: html
+editor: visual
+---
+
+![]("pictures/vecteezy_spongebob-squarepants-cartoon_22036448_215/vecteezy_spongebob-squarepants-cartoon_22036448.jpg")
+
+# Error: 404 Page lost in Bikini Bottom. Spongebob on the case!

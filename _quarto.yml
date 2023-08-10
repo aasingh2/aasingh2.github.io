@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: docs
+preview:
+  port: 22222
+  browser: true
+  watch-inputs: true
+  navigate: true
+execute:
+  freeze: true
+
+website:
+ #title: "Aakanksha Singh"
+ navbar:
+   pinned: true
+   background: "#000000"
+   foreground: "#FFFFFF"
+   search: true
+   left:
+    - href: index.qmd
+      text: Home
+    - href: Education_and_Research/education_and_background.qmd
+      text: Education and reserach Experience
+    - href: Current_Projects/current_projects.qmd
+      text: Current Projects
+    - href: CV/index.qmd
+      text: CV
+   right: 
+    - icon: linkedin
+      href: https://www.linkedin.com/in/aakanksha-singh-a1b850139/
+    - icon: envelope
+      href: "mailto:aakanksha.singh@kgu.de" 
+    - icon: github
+      href: https://github.com/aasingh2
+ #back-to-top-navigation: true
+ page-footer: 
+  background: "#000000"
+  foreground: "#FFFFFF"
+  left: <span class="faux-block">&#169; 2023 Aakanksha Singh 4.0</span>
+  right: 
+   - icon: github
+     href: https://github.com/aasingh2
+ reader-mode: true
+
+format:
+  html:
+    theme: pulse
+    css: html/styles.scss
+    toc: false
+    code-link: true
+    anchor-selection: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+
+
