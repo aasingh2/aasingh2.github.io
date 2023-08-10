@@ -10,7 +10,7 @@ execute:
   freeze: true
 
 website:
- #title: "Aakanksha Singh"
+ title: "Aakanksha Singh"
  navbar:
    pinned: true
    background: "#000000"
@@ -36,11 +36,11 @@ website:
  page-footer: 
   background: "#000000"
   foreground: "#FFFFFF"
-  left: <span class="faux-block">&#169; 2023 Aakanksha Singh 4.0</span>
+  left: <span class="faux-block">&#169; 2023 Aakanksha Singh</span>
   right: 
    - icon: github
-     href: https://github.com/aasingh2
- reader-mode: true
+     href: https://github.com/aasingh2/aasingh2.github.io
+ 
 
 format:
   html:
