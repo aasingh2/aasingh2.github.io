@@ -25,6 +25,8 @@ website:
       text: Current Projects
     - href: CV/index.qmd
       text: CV
+    - href: Diving_into_Distractions/distractions.html
+      text: Diving into Distractions
    right: 
     - icon: linkedin
       href: https://www.linkedin.com/in/aakanksha-singh-a1b850139/

@@ -1,0 +1,9 @@
+---
+format:
+  html:
+    css: styles.css
+---
+
+<img src="../pictures/404_image_no_bg.png" alt="Photo by justinlim on UnSplash" style="height: 100%; width: 100%; object-fit: contain"/>
+
+### This page is under construction. Meanwhile the minions urges you to explore other pages! {.center_heading}

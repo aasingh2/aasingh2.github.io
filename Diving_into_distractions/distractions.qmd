@@ -1,0 +1,9 @@
+---
+format: html
+---
+
+It is a place where the spotlight shines on things that snagged my attention or had me totally captivated during a wild weekend! It's like a treasure chest of curiosities and obsessions that I just had to share.
+
+<img src="../pictures/404_image_no_bg.png" alt="Photo by justinlim on UnSplash" style="height: 100%; width: 100%; object-fit: contain"/>
+
+### This page is under construction. Meanwhile the minions urge you to explore other pages! {.center_heading}
